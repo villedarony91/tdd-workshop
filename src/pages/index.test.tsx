@@ -4,7 +4,7 @@ import Home from "./index";
 describe("Home", () => {
   it("renders a heading", () => {
     render(<Home />);
-    const heading = screen.findByRole("heading", { name: /Calculator/ });
+    const heading = screen.getByRole("heading", { name: /Calculator/ });
     expect(heading).toBeInTheDocument();
   });
 });
